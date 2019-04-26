@@ -1,0 +1,83 @@
+ext{
+    android=[
+            compileSdkVersion : 28,
+            buildToolsVersion : '27.0.3',
+            applicationId     : "com.gzgykj.sturollcall",
+            minSdkVersion     : 16,
+            targetSdkVersion  : 28,
+            versionCode       :1,//
+            versionName       : "1.0"//更新的时候 给用户看到
+    ]
+    def dependVersion=[
+            support     : "28.0.0",
+            retrofit    : "2.5.0",
+            okhttp      : "3.11.0",
+            dagger2     : "2.11",
+            butterknife : "8.8.1",
+            blockcanary : "1.2.1",
+            leakcanary  : "1.4-beta2",
+            constraint:"1.0.2"
+    ]
+    dependencies=[
+            "appcompat-v7"              : "com.android.support:appcompat-v7:${dependVersion.support}",
+            "cardview-v7"               : "com.android.support:cardview-v7:${dependVersion.support}",
+            "recyclerview-v7"           : "com.android.support:recyclerview-v7:${dependVersion.support}",
+            "design"                    : "com.android.support:design:${dependVersion.support}",
+            "constraint-ayout"          : "com.android.support.constraint:constraint-layout:${dependVersion.constraint}",
+            "recyclerview-adapter"      : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30",
+            "rxpermissions"             : "com.github.tbruyelle:rxpermissions:0.10.2",
+            "smartrefreshlayout"        : "com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-alpha-14",
+            "smartrefreshheader"        : "com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-alpha-14",
+            //分割线
+            "flexibledivider"           : "com.yqritc:recyclerview-flexibledivider:1.4.0",
+            "rxjava"                    : "io.reactivex.rxjava2:rxjava:2.1.1",
+            "rxandroid"                 : "io.reactivex.rxjava2:rxandroid:2.1.1",
+            "retrofit"                  : "com.squareup.retrofit2:retrofit:${dependVersion.retrofit}",
+            "retrofit-converter-gson"   : "com.squareup.retrofit2:converter-gson:${dependVersion.retrofit}",
+            "retrofit-adapter-rxjava2"  : "com.squareup.retrofit2:adapter-rxjava2:${dependVersion.retrofit}",
+            "okhttp-logging-interceptor": "com.squareup.okhttp3:logging-interceptor:${dependVersion.okhttp}",
+
+            "glide"                     : "com.github.bumptech.glide:glide:4.8.0",
+            "glide_comiler"            : "com.github.bumptech.glide:compiler:4.8.0",
+
+            "glide-okhttp3-integration" : "com.github.bumptech.glide:okhttp3-integration:1.4.0@aar",
+
+            //注解
+            "dagger"                    : "com.google.dagger:dagger:${dependVersion.dagger2}",
+            "dagger-compiler"           : "com.google.dagger:dagger-compiler:${dependVersion.dagger2}",
+            "butterknife"               : "com.jakewharton:butterknife:${dependVersion.butterknife}",
+            "butterknife-compiler"      : "com.jakewharton:butterknife-compiler:${dependVersion.butterknife}",
+            "annotation"                : "org.glassfish:javax.annotation:10.0-b28",
+
+            "loadingview"                :"com.kaopiz:kprogresshud:1.2.0",
+            //other
+            "multidex"                  : "com.android.support:multidex:1.0.1",
+            //日志
+            "logger"                    : "com.orhanobut:logger:1.15",
+
+            "fragmentation"             : "me.yokeyword:fragmentation:1.3.6",
+            "fragmentation-swipeback"   :"me.yokeyword:fragmentation-swipeback:1.3.6",
+            //内存监控
+            "leakcanary-android"        : "com.squareup.leakcanary:leakcanary-android:${dependVersion.leakcanary}",
+            "leakcanary-android-no-op"  : "com.squareup.leakcanary:leakcanary-android-no-op:${dependVersion.leakcanary}",
+            //Toast
+            "toasty"                    :"com.github.GrenderG:Toasty:1.4.1",
+            //沉侵式状态栏
+            "statusbar"                 : "com.github.niorgai:StatusBarCompat:2.1.4",
+            "statusbarutil"                 : "com.jaeger.statusbarutil:library:1.5.1",
+            //阿里JSON
+            "fastjson"              :               "com.alibaba:fastjson:1.1.57.android",
+            //圆形图片
+            "circleimageview"           : "de.hdodenhof:circleimageview:2.2.0",
+
+            "MPAndroidChart"                       : "com.github.PhilJay:MPAndroidChart:v3.0.2",
+
+            "flycodialog"               : "com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar",
+
+            //rabbitMQ
+            "amqp_client"               :   "com.rabbitmq:amqp-client:4.8.1",
+            //事件分发
+              "eventbus"                          :"org.greenrobot:eventbus:3.1.1"
+    ]
+
+}

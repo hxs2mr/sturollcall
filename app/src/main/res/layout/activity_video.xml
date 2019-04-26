@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <include
+        layout="@layout/toolbar_layout"
+        />
+
+<android.support.v7.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="请选择语音通话对象"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_gravity="center"
+    android:layout_marginTop="70dp"
+    android:textColor="#333333"
+    />
+<android.support.v7.widget.AppCompatButton
+    android:id="@+id/btn_admin"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login_select"
+    android:textColor="#ffffff"
+    android:text="宿管员"
+    android:layout_marginTop="40dp"
+    android:layout_gravity="center"
+    android:textSize="19sp"
+    />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_qin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/video_qin_select"
+        android:textColor="#ffffff"
+        android:text="亲属"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textSize="19sp"
+        />
+    <ScrollView
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/qin_linear"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:background="@drawable/video_qin_shaoe"
+        android:orientation="vertical">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择你的通话亲属"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#333333"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_face_select"
+            android:textColor="#ffffff"
+            android:text="立即通话"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="19sp"
+            />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_call_cancle"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/call_phone_cancle_shape"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="取消"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:textSize="19sp"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</android.support.v7.widget.LinearLayoutCompat>

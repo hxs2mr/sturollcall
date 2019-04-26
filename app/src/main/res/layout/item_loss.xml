@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="#ffffff"
+    android:foreground="?attr/selectableItemBackground"
+    >
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/loss_header_im"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:src="@mipmap/icon_img_load_detail"
+    />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/center_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/loss_header_im"
+        >
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/loss_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:textSize="19sp"
+        android:layout_gravity="center|left"
+        android:gravity="left"
+        android:text="报损人:何小松"
+        />
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#6e6e6e"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:text="物品:厕所坑(CS021)"
+    />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/loss_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="时间:2019-03-21"
+            android:textColor="#808080"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/loss_status_tv"
+    android:layout_width="70dp"
+    android:layout_height="30dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+        android:gravity="center"
+    android:background="@drawable/loss_shape_yes"
+        android:textColor="#5298fc"
+        android:textSize="16sp"
+        android:text="已处理"
+    />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/xian"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eaeaea"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/center_linear"
+        />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/xian"
+        >
+      <android.support.v7.widget.AppCompatButton
+          android:layout_width="50dp"
+          android:layout_height="30dp"
+          android:foreground="?attr/selectableItemBackground"
+          android:background="@drawable/loss_look_shape"
+          android:text="查看"
+          android:textColor="#bfbfbf"
+          android:gravity="center"
+          tools:targetApi="m"
+          tools:ignore="UnusedAttribute" />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/loss_look_shape"
+            android:text="修改"
+            android:textColor="#bfbfbf"
+            tools:targetApi="m"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            tools:ignore="UnusedAttribute" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/loss_look_shape"
+            android:text="删除"
+            android:gravity="center"
+            android:textColor="#bfbfbf"
+            android:layout_marginLeft="20dp"
+            tools:targetApi="m"
+            tools:ignore="UnusedAttribute" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</RelativeLayout>

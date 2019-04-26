@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_activity"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:gravity="center"
+    app:contentInsetStart="0dp"
+    android:background="#5298fc"
+    android:fitsSystemWindows="true"
+    >
+    <android.support.v7.widget.LinearLayoutCompat
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="语音通话"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_toLeftOf="@+id/right_tv"
+                android:id="@+id/icon_video"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_video"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/left_image"
+                android:layout_marginLeft="10dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@mipmap/icon_menu"
+                android:scaleType="centerInside"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/left_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/left_image"
+                android:gravity="center"
+                android:text="人员点名"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.Toolbar>

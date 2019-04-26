@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+   <RelativeLayout
+       android:id="@+id/face_rellayout"
+       android:layout_width="match_parent"
+       style="?android:textAppearanceSmall"
+       android:layout_height="50dp">
+       <android.support.v7.widget.AppCompatTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="面部资料设置"
+           android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="#333333"
+           android:textSize="18sp"
+
+           />
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/icon_setting_next"
+                />
+
+   </RelativeLayout>
+<android.support.v7.widget.AppCompatTextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#eaeaea"
+    android:layout_marginLeft="15dp"
+    />
+
+    <RelativeLayout
+        android:id="@+id/password_rellayout"
+        android:layout_width="match_parent"
+        style="?android:textAppearanceSmall"
+        android:layout_height="50dp">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="#333333"
+            android:textSize="18sp"
+
+            />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/icon_setting_next"
+            />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eaeaea"
+        android:layout_marginLeft="15dp"
+        />
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/add_loss_linear"
+        android:layout_width="324dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/loss_add_shape"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:elevation="10dp"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出系统"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

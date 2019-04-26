@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:background="#ffffff"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关于本周二宿舍卫生大检查问题"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:textColor="#999999"
+        android:maxLines="1"
+        />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:layout_below="@+id/item_title"
+            android:text="小王"
+            android:maxLines="1"
+            android:textColor="#6e6e6e"
+            android:layout_marginTop="5dp"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-12-19"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/item_name"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:textColor="#808080"
+            />
+      <android.support.v7.widget.AppCompatImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignBottom="@+id/item_time"
+          android:layout_marginRight="10dp"
+          android:background="@mipmap/icon_notice_look"
+          />
+
+</RelativeLayout>

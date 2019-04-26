@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_rollcall"
+            android:icon="@drawable/icon_rollcall"
+            android:title="人员点名"/>
+        <item
+            android:id="@+id/nav_notice"
+            android:icon="@drawable/icon_notice"
+            android:title="通知通告"/>
+        <item
+            android:id="@+id/nav_loss"
+            android:icon="@drawable/icon_loss"
+            android:title="报损"/>
+        <item
+            android:id="@+id/nav_sign"
+            android:icon="@drawable/icon_sign"
+            android:title="签到统计"/>
+
+        <item
+            android:id="@+id/nav_police"
+            android:icon="@drawable/icon_waring_jilu"
+            android:title="报警记录"/>
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/icon_setting"
+            android:title="设置"/>
+    </group>
+
+  <!--  <item android:title="@string/system">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_discover_white_24dp"
+                android:title="@string/login"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/swipe">
+        <menu>
+            <item
+                android:id="@+id/nav_swipe_back"
+                android:icon="@drawable/ic_touch_app_white_24dp"
+                android:title="@string/go_swipe_back"/>
+        </menu>
+    </item>-->
+</menu>

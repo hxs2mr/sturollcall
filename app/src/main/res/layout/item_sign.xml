@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:padding="10dp"
+    android:background="#ffffff"
+    android:layout_height="50dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/sign_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#6e6e6e"
+        android:layout_centerVertical="true"
+        android:text="点名时间:2019-03-21 17:00 ~ 2019-03-21 18:00"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/sign_status_tv"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:background="@drawable/loss_shape_yes"
+        android:textColor="#5298fc"
+        android:textSize="16sp"
+        android:text="已到"
+        />
+
+</RelativeLayout>

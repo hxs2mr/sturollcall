@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_layout"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.gzgykj.sturollcall.widget.CirTextureView
+            android:id="@+id/texture_preview"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <com.gykj.acface.customview.CirFaceRectView
+            android:id="@+id/face_rect_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+        <com.gzgykj.sturollcall.widget.CircularViewWidget
+            android:id="@+id/dialog_circle_iv"
+            android:layout_width="370dp"
+            android:layout_height="370dp"
+            android:layout_gravity="center"
+            app:stroke_width="10"
+            app:text_color="#ff99cc"
+            app:text_size="30sp"
+            app:progress_style="STROKE"
+            app:normal_color="#cdcdcd"
+            app:progress_color="#2ee0c5"
+            app:progress="0"
+            />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="240dp"
+            android:layout_height="290dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/icon_addface"
+            android:scaleType="fitCenter"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_complate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:text="采集完成"
+            android:layout_gravity="center"
+            android:background="#44888888"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请正脸采集"
+            android:gravity="center"
+            android:layout_gravity="center|top"
+            android:textColor="#2ee0c5"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="22dp"
+            />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp"
+            >
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请保持脸部在人脸框内"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#515151"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_bottom"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="请正脸采集"
+                android:textSize="17sp"
+                android:textColor="#2ee0c5"
+                />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </FrameLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>
